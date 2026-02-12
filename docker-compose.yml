@@ -27,12 +27,3 @@ services:
     volumes:
       - ./ollama:/root/.ollama
     restart: always
-
-  qdrant:
-    image: qdrant/qdrant:latest
-    container_name: qdrant
-    ports:
-      - "6333:6333"
-    volumes:
-      - ./qdrant:/qdrant/storage
-    restart: always
